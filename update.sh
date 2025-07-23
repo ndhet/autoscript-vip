@@ -32,5 +32,10 @@ wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/ndhet/autoscr
 wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/trialssh.sh" && chmod +x /usr/bin/trialssh
 wget -q -O /usr/bin/autocpu "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/install/autocpu.sh" && chmod +x /usr/bin/autocpu
 wget -q -O /usr/bin/bantwidth "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/install/bantwidth" && chmod +x /usr/bin/bantwidth
+wget -q -O /usr/bin/add-ssh "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-ssh.sh" && chmod +x /usr/bin/add-ssh
+wget -q -O /usr/bin/add-vmess "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-vmess.sh" && chmod +x /usr/bin/add-vmess
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-vless.sh" && chmod +x /usr/bin/add-vless
+wget -q -O /usr/bin/add-trojan "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-trojan.sh" && chmod +x /usr/bin/add-trojan
+#wget -q -O /usr/bin/add-ss "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-ss.sh" && chmod +x /usr/bin/add-ss
 echo -e " [INFO] Download File Successfully"
 exit

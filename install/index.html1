@@ -1,9 +1,398 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<kepala>
-<meta http-equiv="REFRESH" content="0;url=https://t.me/CasperGaming">
-</kepala>
-<tubuh>
-<p>Pengalihan URL</p>
-</tubuh>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDHET STORE - Script & Layanan</title>
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="description" content="Jelajahi ndhetstore , script eksklusif dan layanan inovatif karya Dedi Humaedi, termasuk Script RDP Installer, Layanan VPS, Akun DigitalOcean, aplikasi web, dan lainnya.">
+    <meta property="og:description" content="Jelajahi ndhetstore , script eksklusif dan layanan inovatif karya Dedi Humaedi, termasuk Script RDP Installer, Layanan VPS, Akun DigitalOcean, aplikasi web, dan lainnya.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vip.sshaxor.web.id"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="author" content="Dedi Humaedi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vip.sshaxor.web.id">
+    <meta id="theme-color-meta" name="theme-color" content="#0d1117">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <style>
+        :root {
+            --bg-color: #f6f8fa;
+            --header-bg-color: rgba(255, 255, 255, 0.85);
+            --card-bg-color: #ffffff;
+            --card-secondary-bg-color: #f6f8fa;
+            --text-color: #24292f;
+            --text-muted-color: #57606a;
+            --heading-color: #0969da;
+            --accent-color: #0969da;
+            --accent-glow: rgba(9, 105, 218, 0.2);
+            --border-color: #d0d7de;
+            --shadow-color: rgba(140, 149, 159, 0.15);
+            --nav-link-hover-bg: #eaf2fa;
+        }
+
+        body.dark-mode {
+            --bg-color: #010409;
+            --header-bg-color: rgba(13, 17, 23, 0.85);
+            --card-bg-color: #0d1117;
+            --card-secondary-bg-color: #161b22;
+            --text-color: #e6edf3;
+            --text-muted-color: #8b949e;
+            --heading-color: #58a6ff;
+            --accent-color: #58a6ff;
+            --accent-glow: rgba(88, 166, 255, 0.2);
+            --border-color: #30363d;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --nav-link-hover-bg: #162c46;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 15px 30px;
+            background-color: var(--header-bg-color);
+            backdrop-filter: saturate(180%) blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .site-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            color: var(--text-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .site-title img {
+            height: clamp(28px, 5vw, 35px);
+            width: auto;
+            object-fit: contain;
+        }
+        .main-header .header-nav {
+            flex-grow: 1;
+        }
+        .main-header .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .main-header .nav-links a {
+            padding: 8px 16px;
+            text-decoration: none;
+            color: var(--text-muted-color);
+            font-weight: 500;
+            transition: color 0.2s ease;
+            border-radius: 6px;
+        }
+        .main-header .nav-links a:hover {
+            color: var(--accent-color);
+            background-color: var(--nav-link-hover-bg);
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-toggle { display: none; }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 30px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .content-card {
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 3px 6px var(--shadow-color);
+            overflow: hidden;
+            width: 100%;
+            scroll-margin-top: 85px; 
+        }
+        .section-title {
+            padding: 20px 25px;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: var(--heading-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .content-padding { padding: 25px; }
+
+        #theme-toggle {
+            background-color: var(--card-secondary-bg-color);
+            border: 1px solid var(--border-color);
+            width: 40px; height: 40px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center; justify-content: center;
+            cursor: pointer;
+            color: var(--text-muted-color);
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+        #theme-toggle:hover { color: var(--accent-color); border-color: var(--accent-color); }
+        #theme-toggle svg { width: 18px; height: 18px; }
+
+        .project-list { list-style-type: none; }
+        .project-list li a { display: block; padding: 18px 25px; text-decoration: none; color: var(--text-muted-color); font-size: 1rem; font-weight: 500; border-bottom: 1px solid var(--border-color); transition: all 0.2s ease; }
+        .project-list li:last-child a { border-bottom: none; }
+        .project-list li a:hover { color: var(--accent-color); background-color: var(--card-secondary-bg-color); transform: translateX(5px); }
+
+        .price-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .price-item { background-color: var(--bg-color); padding: 20px; border-radius: 6px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .price-item:hover { transform: translateY(-3px); box-shadow: 0 8px 15px var(--shadow-color); }
+        .price-item h3 { font-size: 1.1em; color: var(--text-color); margin-bottom: 8px; font-weight: 600; }
+        .price-item .price { font-size: 1.4em; color: var(--accent-color); font-weight: 700; }
+        
+        .buy-section .form-group { margin-bottom: 15px; }
+        .buy-section label { display: block; font-size: 0.9rem; color: var(--text-muted-color); margin-bottom: 8px; font-weight: 500; }
+        .buy-section input, .buy-section select { width: 100%; padding: 12px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 1rem; font-family: inherit; background-color: var(--bg-color); color: var(--text-color); transition: border-color 0.2s, box-shadow 0.2s; }
+        .buy-section input:focus, .buy-section select:focus { outline: none; border-color: var(--accent-color); box-shadow: 0 0 0 3px var(--accent-glow); }
+        .buy-button { background-color: var(--accent-color); color: #fff; padding: 12px 25px; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 600; width: 100%; text-align: center; transition: all 0.2s ease; }
+        .buy-button:hover { opacity: 0.85; }
+
+        .main-footer { text-align: center; padding: 30px 20px; font-size: 0.9em; color: var(--text-muted-color); }
+        .whatsapp-fab { position: fixed; width: 55px; height: 55px; bottom: 30px; right: 30px; background-color: #25D366; color: #FFFFFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); text-decoration: none; transition: transform 0.2s ease; z-index: 1000; }
+        .whatsapp-fab:hover { transform: scale(1.1); }
+        .whatsapp-fab svg { width: 28px; height: 28px; fill: currentColor; }
+        
+        @media (max-width: 992px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+             .main-header .header-nav {
+                display: none;
+            }
+            .nav-toggle {
+                display: block;
+                background: none; border: none; color: var(--text-muted-color);
+                cursor: pointer; padding: 5px;
+            }
+            .main-header.nav-open .header-nav {
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--card-bg-color);
+                box-shadow: 0 10px 10px var(--shadow-color);
+                border-bottom: 1px solid var(--border-color);
+            }
+            .main-header.nav-open .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 0;
+            }
+            .main-header.nav-open .nav-links a {
+                width: 100%;
+                padding: 15px 30px;
+                border-radius: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .main-header { padding: 15px 20px; }
+            .main-container { padding: 20px 15px; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header" id="main-header">
+        <a href="/" class="site-title">
+            <img src="https://sshaxor.my.id/images/logo.png" alt="NDHET STORE Logo">
+            <span>NDHET STORE</span>
+        </a>
+        
+        <nav class="header-nav">
+            <ul class="nav-links">
+                <li><a href="#proyek">SC WEB</a></li>
+                <li><a href="#script-rdp">Auto Installer RDP</a></li>
+                <li><a href="#layanan-vps">VPS/RDP</a></li>
+                <li><a href="#akun-do">Akun DigitalOcean</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Buka navigasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <div class="content-card" id="proyek" data-aos="fade-up">
+            <h2 class="section-title">Script Website</h2>
+            <ul class="project-list">
+                <li><a href="https://ioi.my.id" target="_blank" rel="noopener noreferrer">WhatsApp Web V1 Express</a></li>
+                <li><a href="https://fe.ioi.my.id" target="_blank" rel="noopener noreferrer">WhatsApp Web V2 React</a></li>
+                <li><a href="https://sshaxor.my.id" target="_blank" rel="noopener noreferrer">Free VPN</a></li>
+                <li><a href="https://vip.sshaxor.my.id" target="_blank" rel="noopener noreferrer">VIP VPN</a></li>
+                <li><a href="https://dedcode.me" target="_blank" rel="noopener noreferrer">Get Camera & Location</a></li>
+                <li><a href="https://api.det.my.id" target="_blank" rel="noopener noreferrer">Rest API</a></li>
+                <li><a href="https://wa-sender.sshaxor.my.id" target="_blank" rel="noopener noreferrer">Whatsapp Blast</a></li>
+                <li><a href="https://tmail.sshaxor.my.id" target="_blank" rel="noopener noreferrer">Temp Mail</a></li>
+                <li><a href="https://absensi.zirhanproject.my.id" target="_blank" rel="noopener noreferrer">Absensi Karyawan</a></li>
+                <li><a href="https://order.ioi.my.id" target="_blank" rel="noopener noreferrer">Management Order</a></li>
+            </ul>
+            </ul>
+        </div>
+        
+        <div class="content-card" id="script-rdp" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-title">AutoScript RDP Installer</h2>
+            <div class="content-padding">
+                <div class="price-list">
+                    <div class="price-item"><h3>Bulanan</h3><p class="price">Rp 60.000</p></div>
+                    <div class="price-item"><h3>Lifetime</h3><p class="price">Rp 700.000</p></div>
+                </div>
+                <div class="buy-section">
+                    <div class="form-group"><label for="rdp_name">Nama Lengkap</label><input type="text" id="rdp_name" placeholder="Masukkan nama Anda" required></div>
+                    <div class="form-group"><label for="rdp_nomorhp">Nomor WhatsApp</label><input type="tel" id="rdp_nomorhp" placeholder="Contoh: 08123456789" required></div>
+                    <div class="form-group"><label for="rdp_duration">Durasi </label><select id="rdp_duration" required><option value="Bulanan (Rp 60.000)">Bulanan - Rp 60.000</option><option value="Lifetime (Rp 700.000)">Lifetime - Rp 700.000</option></select></div>
+                    <button class="buy-button" onclick="orderRdpScript()">Pesan Script</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-card" id="layanan-vps" data-aos="fade-up" data-aos-delay="50">
+            <h2 class="section-title">VPS / RDP</h2>
+            <div class="content-padding">
+                <div class="price-list">
+                    <div class="price-item"><h3>4GB 4 CORE</h3><p class="price">Rp 50.000</p></div>
+                    <div class="price-item"><h3>8GB 4 CORE</h3><p class="price">Rp 80.000</p></div>
+                </div>
+                <div class="buy-section">
+                    <div class="form-group"><label for="vps_type">Tipe Layanan</label><select id="vps_type" required><option value="VPS">VPS</option><option value="RDP">RDP</option></select></div>
+                    <div class="form-group"><label for="vps_harga">Pilih Harga Layanan</label><select id="vps_harga" required><option value="Rp 50.000 (4GB 4 CORE)">Rp 50.000 / bulan (4GB 4 CORE)</option><option value="Rp 80.000 (8GB 4 CORE)">Rp 80.000 / bulan (8GB 4 CORE)</option></select></div>
+                    <button class="buy-button" onclick="orderVps()">Pesan VPS / RDP</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card" id="akun-do" data-aos="fade-up" data-aos-delay="150">
+            <h2 class="section-title">Akun DigitalOcean</h2>
+            <div class="content-padding">
+                <div class="price-list">
+                    <div class="price-item"><h3>10 Droplet PP</h3><p class="price">Rp 200.000</p></div>
+                    <div class="price-item"><h3>3 Droplet PP</h3><p class="price">Rp 150.000</p></div>
+                </div>
+                <div class="buy-section">
+                    <div class="form-group"><label for="do_name">Nama Lengkap</label><input type="text" id="do_name" placeholder="Masukkan nama Anda" required></div>
+                    <div class="form-group"><label for="do_service">Pilih Layanan Akun</label><select id="do_service" required><option value="10 Droplet PP (Rp 200.000)">10 Droplet PP - Rp 200.000</option><option value="3 Droplet PP (Rp 150.000)">3 Droplet PP - Rp 150.000</option></select></div>
+                    <button class="buy-button" onclick="orderDigitalOcean()">Pesan Akun</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer class="main-footer">
+        <p>Copy Right &copy; <span id="currentYear"></span> Dedi Humaedi.</p>
+    </footer>
+
+    <a href="https://wa.me/6282125388500" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.5-7c-18.9-29.4-28.9-63.3-28.9-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.8 1.4-14.9 6.9c-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const phoneNumber = "6282125388500"; 
+
+        function orderRdpScript() {
+            const name = document.getElementById("rdp_name").value, nomorhp = document.getElementById("rdp_nomorhp").value, duration = document.getElementById("rdp_duration").value;
+            if (!name || !nomorhp) { alert("Harap isi Nama dan Nomor HP Anda."); return; }
+            const message = `Halo, saya ingin memesan *Script RDP Installer*.\n\n*Nama:* ${name}\n*Nomor HP:* ${nomorhp}\n*Paket:* ${duration}\n\nMohon informasinya.`;
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function orderVps() {
+            const type = document.getElementById("vps_type").value, harga = document.getElementById("vps_harga").value;
+            const message = `Halo, saya ingin memesan *Layanan ${type}*.\n\n*Paket Bulanan:* ${harga}\n\nMohon informasinya.`;
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function orderDigitalOcean() {
+            const name = document.getElementById("do_name").value, service = document.getElementById("do_service").value;
+            if (!name) { alert("Harap isi Nama Anda."); return; }
+            const message = `Halo, saya ingin memesan *Layanan Akun DigitalOcean*.\n\n*Nama:* ${name}\n*Layanan:* ${service}\n\nMohon informasinya.`;
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 800,
+                once: true,  
+                offset: 100,
+            });
+
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            const mainHeader = document.getElementById('main-header');
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinksMenu = mainHeader.querySelector('.nav-links');
+
+            navToggle.addEventListener('click', () => {
+                mainHeader.classList.toggle('nav-open');
+            });
+
+            navLinksMenu.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    mainHeader.classList.remove('nav-open');
+                }
+            });
+
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+            const themeMeta = document.getElementById('theme-color-meta');
+            const sunIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>`;
+            const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>`;
+            
+            function applyTheme(theme) {
+                const rootStyles = getComputedStyle(document.documentElement);
+                if (theme === 'dark') {
+                    body.classList.add('dark-mode');
+                    themeToggle.innerHTML = sunIcon;
+                    themeMeta.setAttribute('content', '#0d1117');
+                } else {
+                    body.classList.remove('dark-mode');
+                    themeToggle.innerHTML = moonIcon;
+                    themeMeta.setAttribute('content', '#f6f8fa');
+                }
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const newTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+                localStorage.setItem('theme', newTheme);
+                applyTheme(newTheme);
+            });
+            
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
+        });
+    </script>
+
+</body>
 </html>
