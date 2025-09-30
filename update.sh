@@ -3,6 +3,7 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
 echo -e " [INFO] Downloading File"
+wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/ndhet/cobra/main/enc/enc.sh" && chmod +x /usr/bin/enc
 wget -q -O /usr/bin/add-ip-bot "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-ip-bot.sh" && chmod +x /usr/bin/add-ip-bot
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/m-trgo "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/m-trgo.sh" && chmod +x /usr/bin/m-trgo
@@ -37,5 +38,9 @@ wget -q -O /usr/bin/add-vmess "https://raw.githubusercontent.com/ndhet/autoscrip
 wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-vless.sh" && chmod +x /usr/bin/add-vless
 wget -q -O /usr/bin/add-trojan "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-trojan.sh" && chmod +x /usr/bin/add-trojan
 #wget -q -O /usr/bin/add-ss "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-ss.sh" && chmod +x /usr/bin/add-ss
+cd /usr/bin/
+
+./enc add-ip-bot menu m-trgo restore backup addnoobz cek-noobz m-noobz m-ip m-bot m-theme m-vmess m-vless m-trojan m-system m-sshovpn running m-backup speedtest bckpbot tendang bottelegram xraylimit trialvmess trialvless trialtrojan trialssh autocpu bantwidth add-ssh add-vmess add-vless add-trojan
+
 echo -e " [INFO] Download File Successfully"
 exit
