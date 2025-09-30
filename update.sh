@@ -28,8 +28,8 @@ wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/ndhet/autoscript-
 wget -q -O /usr/bin/bottelegram "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/bottelegram.sh" && chmod +x /usr/bin/bottelegram
 wget -q -O /usr/bin/xraylimit "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/xraylimit.sh" && chmod +x /usr/bin/xraylimit
 wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/trialvmess.sh" && chmod +x /usr/bin/trialvmess
-wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/trialtrojan.sh" && chmod +x /usr/bin/trialtrojan
-wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/trialvless.sh" && chmod +x /usr/bin/trialvless
+wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/trialtrojan.sh" && chmod +x /usr/bin/trialtrojan
+wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/trialvless.sh" && chmod +x /usr/bin/trialvless
 wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/trialssh.sh" && chmod +x /usr/bin/trialssh
 wget -q -O /usr/bin/autocpu "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/install/autocpu.sh" && chmod +x /usr/bin/autocpu
 wget -q -O /usr/bin/bantwidth "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/install/bantwidth" && chmod +x /usr/bin/bantwidth
@@ -41,6 +41,10 @@ wget -q -O /usr/bin/add-trojan "https://raw.githubusercontent.com/ndhet/autoscri
 cd /usr/bin/
 
 ./enc add-ip-bot menu m-trgo restore backup addnoobz cek-noobz m-noobz m-ip m-bot m-theme m-vmess m-vless m-trojan m-system m-sshovpn running m-backup speedtest bckpbot tendang bottelegram xraylimit trialvmess trialvless trialtrojan trialssh autocpu bantwidth add-ssh add-vmess add-vless add-trojan
+rm add-ip-bot~ menu~ m-trgo~ restore~ backup~ addnoobz~ cek-noobz~ m-noobz~ m-ip~ m-bot~ m-theme~ m-vmess~ m-vless~ m-trojan~ m-system~ m-sshovpn~ running~ m-backup~ speedtest~ bckpbot~ tendang~ bottelegram~ xraylimit~ trialvmess~ trialvless~ trialtrojan~ trialssh~ autocpu~ bantwidth~ add-ssh~ add-vmess~ add-vless~ add-trojan~
+cd
+rm .bash_history
+history -c
 
 echo -e " [INFO] Download File Successfully"
 exit
