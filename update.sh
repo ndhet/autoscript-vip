@@ -40,8 +40,8 @@ wget -q -O /usr/bin/add-trojan "https://raw.githubusercontent.com/ndhet/autoscri
 #wget -q -O /usr/bin/add-ss "https://raw.githubusercontent.com/ndhet/autoscript-vip/main/menu/add-ss.sh" && chmod +x /usr/bin/add-ss
 cd /usr/bin/
 
-./enc add-ip-bot menu m-trgo restore backup addnoobz cek-noobz m-noobz m-ip m-bot m-theme m-vmess m-vless m-trojan m-system m-sshovpn running m-backup speedtest bckpbot tendang bottelegram xraylimit trialvmess trialvless trialtrojan trialssh autocpu bantwidth add-ssh add-vmess add-vless add-trojan
-rm add-ip-bot~ menu~ m-trgo~ restore~ backup~ addnoobz~ cek-noobz~ m-noobz~ m-ip~ m-bot~ m-theme~ m-vmess~ m-vless~ m-trojan~ m-system~ m-sshovpn~ running~ m-backup~ speedtest~ bckpbot~ tendang~ bottelegram~ xraylimit~ trialvmess~ trialvless~ trialtrojan~ trialssh~ autocpu~ bantwidth~ add-ssh~ add-vmess~ add-vless~ add-trojan~
+#./enc add-ip-bot menu m-trgo restore backup addnoobz cek-noobz m-noobz m-ip m-bot m-theme m-vmess m-vless m-trojan m-system m-sshovpn running m-backup speedtest bckpbot tendang bottelegram xraylimit trialvmess trialvless trialtrojan trialssh autocpu bantwidth add-ssh add-vmess add-vless add-trojan
+#rm add-ip-bot~ menu~ m-trgo~ restore~ backup~ addnoobz~ cek-noobz~ m-noobz~ m-ip~ m-bot~ m-theme~ m-vmess~ m-vless~ m-trojan~ m-system~ m-sshovpn~ running~ m-backup~ speedtest~ bckpbot~ tendang~ bottelegram~ xraylimit~ trialvmess~ trialvless~ trialtrojan~ trialssh~ autocpu~ bantwidth~ add-ssh~ add-vmess~ add-vless~ add-trojan~
 cd
 rm .bash_history
 history -c
